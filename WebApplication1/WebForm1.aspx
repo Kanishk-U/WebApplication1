@@ -26,14 +26,14 @@
                                     <div class="col-md-4 col-md-offset-1">
                                         <div class="form-group">
                                             <asp:Label runat="server" AssociatedControlID="EmpName"><b>Employee Name</b></asp:Label><br />
-                                            <asp:TextBox runat="server" required="required" Enabled="True" name="BrandName" ID="EmpName" class="form-control input-sm" placeholder="Employee Name"></asp:TextBox>
+                                            <asp:TextBox runat="server" required="required" Enabled="True" name="BrandName" ID="EmpName" class="form-control input-sm" placeholder="Employee Name"/>
 
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-md-offset-1">
                                         <div class="form-group">
-                                            <asp:Label runat="server" AssociatedControlID="txtfname"><b>Father Name</b></asp:Label><br />
-                                            <asp:TextBox runat="server" required="required" Enabled="True" name="BrandName" ID="txtfname" class="form-control input-sm" placeholder="Father Name"></asp:TextBox>
+                                            <asp:Label runat="server" AssociatedControlID="lblFirstName"><b>Father Name</b></asp:Label><br />
+                                            <asp:TextBox runat="server" required="required" Enabled="True" name="BrandName" ID="lblFirstName" class="form-control input-sm" placeholder="Father Name"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@
                                 <div class="row">
                                     <div class="col-md-10 col-md-offset-1">
                                         <div class="form-group">
-                                            <asp:Button Text="Save" ID="btnsave"  CssClass="btn btn-primary btn-lg"  Width="220px" runat="server" />
+                                            <asp:Button Text="Save" ID="btnsave"  CssClass="btn btn-primary btn-lg"  Width="220px" runat="server" OnClick="btnsave_Click" />
                                             <asp:Button Text="Update" ID="btnupdate"  CssClass="btn btn-primary btn-lg" Width="220px" runat="server" />
                                             <asp:Button Text="Delete" ID="btndlt"  CssClass="btn btn-danger btn-lg" Width="220px" runat="server" />
                                             <asp:Label Text="" ForeColor="Green" Font-Bold="true" ID="lblmessage" CssClass="label label-success" runat="server" />
